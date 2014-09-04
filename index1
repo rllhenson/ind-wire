@@ -1,0 +1,229 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>I don't like this theme and intend to change it</title>
+	<link rel="stylesheet" href="themes/blue.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<!--<style>
+		img {
+		    position:absolute;
+		    top:0;
+		    bottom:0;
+		    margin:auto;
+		}
+	</style>-->
+</head>
+<body>
+	<div id="home" data-role="page" data-theme="a">
+		<div data-role="header">
+			<a href="#home" data-theme="a" >Logo</a>
+			<h1></h1>
+			<a href="#search" data-icon="search" data-iconpos="notext" data-theme="a" data-transition="slide"></a>
+
+		</div>
+
+		<!--fade - fades page over the current one
+			flip - flips the next page over from under current one
+			pop - the next page springs into view
+			slide - next page slides in from the side
+			slideDown - next page slides in from the top
+			slideUp - slides in from the bottom--> 
+
+		<div data-role="content" data-theme="a">
+
+<!-- 		<div class="ui-grid-a">
+				<div class="ui-block-a">Content</a>
+				<div class="ui-block-b">Content</a>
+			</div> -->
+			<h2>Welcome to Really Awesome Production Co.</h2>
+			<p>Here's what we've been up to lately:</p>
+
+			
+			<h2>Upcoming Events</h2>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">R.A.P. Convention</li>
+				<li><a href="#">
+					<h4>August 22</h4>
+					<p style="font-wight:bold">Some sort of ballroom?</p>
+					<p class="ui-li-aside">3:30-5:15pm</p>
+					<p>We're gonna talk about stuff</p>
+				</a></li>
+				<li><a href="#">
+					<h4>To Do Item 2</h4>
+					<p style="font-wight:bold">To do item 2 summary</p>
+					<p class="ui-li-aside">Due at 2pm</p>
+					<p>This is detail text for ToDo Item 2</p>
+				</a></li>
+				<li data-role="list-divider">Tuesday, November 15</li>
+				<li><a href="#">
+					<h4>To Do Item 3</h4>
+					<p style="font-wight:bold">To do item 3 summary</p>
+					<p class="ui-li-aside">Due at 10:30am</p>
+					<p>This is detail text for ToDo Item 3</p>
+				</a></li>
+			</ul>
+			
+
+		</div>
+
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-transition="fade">About</a></li>
+					<li><a href="#portfolio" data-transition="fade">Portfolio</a></li>
+					<li><a href="#contact" data-transition="fade">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="about" data-role="page" data-theme="a">
+		<div data-role="header" data-position="left">
+			<a href="#home" data-theme="a"  data-transition="slideUp">Logo</a>
+			<h1></h1>
+			<a href="#search" data-icon="search" data-iconpos="notext" data-theme="a" data-transition="slide"></a>
+
+		</div>
+		<div data-role="content" data-theme="a">
+			<p>We are a company that does things! Wonderful things! Go us!</p>
+
+			<label for="listofpeeps">This is our team:</label>
+			<ul id="listofpeeps" data-role="listview" data-inset="true">
+				<li>
+					<img src='images/circle.png'/>
+					<h4>Human Person</h4>
+					<p>this is why they are awesome</p>
+					<p>awesome stuff</p>
+					<p>more awesome</p>
+					<p>awesome again</p>
+				<li>
+					<img src='images/circle.png'/>
+					<h4>Human Person</h4>
+					<p>this is why they are awesome</p>
+				<li>
+					<img src='images/blue.png'/>
+					<h4>Human Person</h4>
+					<p>this is why they are awesome</p>
+			</ul>
+
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" class="ui-btn-active ui-state-persist" data-transition="fade">About</a></li>
+					<li><a href="#portfolio" data-transition="fade">Portfolio</a></li>
+					<li><a href="#contact" data-transition="fade">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="portfolio" data-role="page" data-theme="a">
+		<div data-role="header" data-position="left">
+			<a href="#home" data-theme="a" data-transition="slideUp">Logo</a>
+			<h1></h1>
+			<a href="#search" data-icon="search" data-iconpos="notext" data-theme="a" data-transition="slide"></a>
+
+		</div>
+		<div data-role="content" data-theme="a" >
+			<h2>This is some awesome stuff we've done:</h2>
+			<div class="ui-content">
+				<ul data-role="listview" data-divider-theme="b" data-filter="true">
+					<li data-role="list-divider">Stuffs</li>
+						<li>This Stuff</li>
+							<li>
+								<a href="#">Song 1</a>
+								<a href="#">Yesterday, all my troubles seemed so far away</a>
+							</li>
+							<li>
+								<a href="#">Song 2</a>
+								<a href="#">Penny Lane is in my ear and in my eye</a>
+							</li>
+						<li>Washington</li>
+						<li>Oregon</li>
+					<li data-role="list-divider">France</li>
+						<li>Burgundy</li>
+						<li>Bordeaux</li>
+						<li>Cote du Rhone</li>
+					<li data-role="list-divider">Italy</li>
+						<li>Tuscan</li>
+						<li>Sicily</li>
+						<li>Alto Adige</li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-transition="fade">About</a></li>
+					<li><a href="#portfolio" class="ui-btn-active ui-state-persist" data-transition="fade">Portfolio</a></li>
+					<li><a href="#contact" data-transition="fade">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="contact" data-role="page" data-theme="a">
+		<div data-role="header" data-position="left">
+			<a href="#home" data-theme="a" data-transition="slideUp">Logo</a>
+			<h1></h1>
+			<a href="#search" data-icon="search" data-iconpos="notext" data-theme="a" data-transition="slide"></a>
+
+		</div>
+		<div data-role="content" data-theme="a">
+			<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
+			
+			<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
+			<label for="slider1">Input slider:</label>
+			<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
+			<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+			<label for="radio-choice-a1">On</label>
+			<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+			<label for="radio-choice-b1">Off</label>
+			</fieldset>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-transition="fade">About</a></li>
+					<li><a href="#portfolio" data-transition="fade">Portfolio</a></li>
+					<li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition="fade">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="search" data-role="page" data-theme="a">
+		<div data-role="header" data-position="left">
+			<a href="#home" data-theme="a" data-transition="slideUp">Logo</a>
+			<h1></h1>
+			<a href="#search" data-icon="search" data-iconpos="notext" data-theme="a" class="ui-btn-active ui-state-persist"></a>
+
+
+		</div>
+		<div data-role="content" data-theme="a">
+			</br>
+			
+			<label for="search1">What can we help you find?</label>
+			<input type="text" name="search1" id="search1" data-theme="a" />
+			<label for="search2">Search Input:</label>
+			<input type="search" name="search" id="2" value="" />
+
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-transition="fade">About</a></li>
+					<li><a href="#portfolio" data-transition="fade">Portfolio</a></li>
+					<li><a href="#contact" data-transition="fade">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
